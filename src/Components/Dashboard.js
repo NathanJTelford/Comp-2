@@ -25,7 +25,7 @@ class Dashboard extends Component{
         let renderProperties = this.state.properties.map((el,i)=>{return <h1 key={i}>{el}</h1>})
         return(
             <div>
-                <button onClick={()=> <Route path='/Wizard'/>}>Add New Property</button>
+                <button onClick={()=> <Route path='/Wizard'/>}>Add New Property</button> 
                 {Dashboard}
                 {renderProperties}
                 <House />

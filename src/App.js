@@ -3,16 +3,17 @@ import './App.css';
 import Dash from './Components/Dashboard';
 import Wizard from './Components/Wizard';
 // import Header from './Components/Header';
-import {Router,Route} from 'react-router';
+import {Router,Route, Switch} from 'react-router-dom';
+import route from './route'
+
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Route path = '/' Component={Dash}/>
-        <Route path = '/Wizard' Component={Wizard}/>
-
-      </Router>
+      <Switch>
+      <Route exact path='/' component={Dash}/>
+      {/* <Route path ='/Wizard' component={Wizard}/> */}
+      </Switch>
     );
   }
 }

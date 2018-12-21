@@ -1,13 +1,14 @@
 import Dash from './Components/Dashboard';
 import Wizard from './Components/Wizard';
-import {Switch,Router} from 'react-router';
+import {Switch,Route} from 'react-router-dom';
+import React from 'react';
 
 
   const routes = ( 
 
         <Switch>
-            <Router exact path='/' component={Dash}/>
-            <Router path ='/Wizard' component={Wizard}/>
+            <Route exact path='/' component={Dash}/>
+            {/* <Route path ='/Wizard' component={Wizard}/> */}
         </Switch>
         )
 
